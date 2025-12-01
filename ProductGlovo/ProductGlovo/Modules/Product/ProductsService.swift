@@ -8,6 +8,7 @@ import Foundation
 
 struct Product:Codable {
     let title: String
+    let id: Int
 }
 
 protocol ProductsServiceProtocol {

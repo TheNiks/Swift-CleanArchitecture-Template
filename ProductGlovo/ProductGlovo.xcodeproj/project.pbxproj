@@ -6,8 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		9D7E08372EDD73BB00722AAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D7E077B2ED091EF00722AAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D7E07822ED091EF00722AAA;
+			remoteInfo = ProductGlovo;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		9D7E07832ED091EF00722AAA /* ProductGlovo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductGlovo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D7E08332EDD73BB00722AAA /* ProductGlovoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProductGlovoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -29,10 +40,22 @@
 			path = ProductGlovo;
 			sourceTree = "<group>";
 		};
+		9D7E08342EDD73BB00722AAA /* ProductGlovoTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ProductGlovoTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9D7E07802ED091EF00722AAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D7E08302EDD73BB00722AAA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -46,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				9D7E07852ED091EF00722AAA /* ProductGlovo */,
+				9D7E08342EDD73BB00722AAA /* ProductGlovoTests */,
 				9D7E07842ED091EF00722AAA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				9D7E07832ED091EF00722AAA /* ProductGlovo.app */,
+				9D7E08332EDD73BB00722AAA /* ProductGlovoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,6 +108,29 @@
 			productReference = 9D7E07832ED091EF00722AAA /* ProductGlovo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9D7E08322EDD73BB00722AAA /* ProductGlovoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D7E08392EDD73BB00722AAA /* Build configuration list for PBXNativeTarget "ProductGlovoTests" */;
+			buildPhases = (
+				9D7E082F2EDD73BB00722AAA /* Sources */,
+				9D7E08302EDD73BB00722AAA /* Frameworks */,
+				9D7E08312EDD73BB00722AAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D7E08382EDD73BB00722AAA /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9D7E08342EDD73BB00722AAA /* ProductGlovoTests */,
+			);
+			name = ProductGlovoTests;
+			packageProductDependencies = (
+			);
+			productName = ProductGlovoTests;
+			productReference = 9D7E08332EDD73BB00722AAA /* ProductGlovoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -95,6 +143,10 @@
 				TargetAttributes = {
 					9D7E07822ED091EF00722AAA = {
 						CreatedOnToolsVersion = 26.1.1;
+					};
+					9D7E08322EDD73BB00722AAA = {
+						CreatedOnToolsVersion = 26.1.1;
+						TestTargetID = 9D7E07822ED091EF00722AAA;
 					};
 				};
 			};
@@ -113,12 +165,20 @@
 			projectRoot = "";
 			targets = (
 				9D7E07822ED091EF00722AAA /* ProductGlovo */,
+				9D7E08322EDD73BB00722AAA /* ProductGlovoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		9D7E07812ED091EF00722AAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D7E08312EDD73BB00722AAA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -135,7 +195,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9D7E082F2EDD73BB00722AAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9D7E08382EDD73BB00722AAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D7E07822ED091EF00722AAA /* ProductGlovo */;
+			targetProxy = 9D7E08372EDD73BB00722AAA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		9D7E07972ED091F100722AAA /* Debug */ = {
@@ -326,6 +401,46 @@
 			};
 			name = Release;
 		};
+		9D7E083A2EDD73BB00722AAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MdNiks.ProductGlovoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProductGlovo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ProductGlovo";
+			};
+			name = Debug;
+		};
+		9D7E083B2EDD73BB00722AAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MdNiks.ProductGlovoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProductGlovo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ProductGlovo";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -343,6 +458,15 @@
 			buildConfigurations = (
 				9D7E07972ED091F100722AAA /* Debug */,
 				9D7E07982ED091F100722AAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D7E08392EDD73BB00722AAA /* Build configuration list for PBXNativeTarget "ProductGlovoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D7E083A2EDD73BB00722AAA /* Debug */,
+				9D7E083B2EDD73BB00722AAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

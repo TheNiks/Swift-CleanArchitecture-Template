@@ -17,6 +17,7 @@ class ProductsViewController: UIViewController {
     private lazy var tableView: UITableView = {
         let table = UITableView()
         table.translatesAutoresizingMaskIntoConstraints = false
+        table.register(ProductCell.self, forCellReuseIdentifier: ProductCell.reuseId)
         table.dataSource = self
         return table
     }()
